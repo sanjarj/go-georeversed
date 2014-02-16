@@ -47,4 +47,6 @@ func readBorders(filename string) ([]*geo.Country, error) {
 	} else {
 		return nil, err
 	}
+	// never happens, fix go1 complains
+	return nil, nil
 }
